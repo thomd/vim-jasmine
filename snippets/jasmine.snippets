@@ -1,0 +1,51 @@
+# specs are grouped in suites. suites are defined using the global describe() function
+snippet desc
+	describe('${1:when...}', function(){
+		${2}
+	});
+
+# a suite can have a beforeEach() declaration that runs before each spec.
+snippet before
+	beforeEach(function(){
+		${1}
+	});
+
+# a suite can have an afterEach() declaration that runs after each spec.
+snippet after
+	afterEach(function () {
+		${1}
+	});
+
+# a spec is called with it()
+snippet it
+	it('${1:should...}', function(){
+		expect(${2:condition}).toEqual(${3});
+	});
+
+# within a spec expectations about the behavior are expressed using expect() and any of various expectation matchers.
+snippet ex
+	expect(${1}).to${2}(${3});
+
+# expectation matching toEqual()
+snippet exe
+	expect(${1}).toEqual(${2});
+	
+# expectation matching true
+snippet ext
+	expect(${1}).toBeTruthy();
+	
+# expectation matching false
+snippet exf
+	expect(${1}).toBeFalsy();
+	
+# expectation matching a regular expression
+snippet expat
+	expect(${1}).toMatch(${2:/pattern/});
+	
+# create a custom matcher
+snippet matcher
+	this.addMatchers({
+		to${1:BeLessThan}: function(${2:expected}){
+			return this.actual < ${3:$2}
+		}
+	});
