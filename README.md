@@ -10,7 +10,7 @@ The snippets requires having [snipMate](https://github.com/msanders/snipmate.vim
 
 ### with Janus Vim Distribution
 
-This plugin is prepared for __easy integration__ in [Carlhudas](https://github.com/carlhuda) vim Distribution __[Janus](https://github.com/carlhuda/janus)__. 
+This plugin is prepared for __easy integration__ in [Carlhudas](https://github.com/carlhuda/janus) vim Distribution __Janus__. 
 
 If you want to add it as an additional Vim plugin, add in `~/.janus.rake`:
 
@@ -18,7 +18,7 @@ If you want to add it as an additional Vim plugin, add in `~/.janus.rake`:
 
 ### Manual installation
 
-Unzip the latest `vim-jasmin-<version>.zip` on your `~/.vim` directory.
+Downlad and unzip [`vim-jasmine-0.1.zip`](https://github.com/downloads/thomd/vim-jasmine/vim-jasmine-0.1.zip) on your `~/.vim` directory.
 
 Alternatively, you can also use the Makefile:
 
