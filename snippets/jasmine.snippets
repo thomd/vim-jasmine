@@ -1,6 +1,6 @@
 # specs are grouped in suites. suites are defined using the global describe() function
 snippet desc
-	describe('${1:when...}', function(){
+	describe('when ${1:...}', function(){
 		${2}
 	});
 
@@ -18,7 +18,7 @@ snippet after
 
 # a spec is called with it()
 snippet it
-	it('${1:should...}', function(){
+	it('should ${1:...}', function(){
 		expect(${2:condition}).toEqual(${3});
 	});
 
@@ -29,19 +29,19 @@ snippet ex
 # expectation matching toEqual()
 snippet exe
 	expect(${1}).toEqual(${2});
-	
+
 # expectation matching true
 snippet ext
 	expect(${1}).toBeTruthy();
-	
+
 # expectation matching false
 snippet exf
 	expect(${1}).toBeFalsy();
-	
+
 # expectation matching a regular expression
 snippet expat
 	expect(${1}).toMatch(${2:/pattern/});
-	
+
 # create a custom matcher
 snippet matcher
 	this.addMatchers({
