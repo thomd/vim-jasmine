@@ -1,0 +1,97 @@
+*jasmine.txt* Documentation for jasmine-vim plugin
+
+Plugin source: https://github.com/thomd/vim-jasmine
+Jasmine documentation: https://github.com/pivotal/jasmine/wiki
+
+==============================================================================
+                                                            *jasmine-snippets*
+Snippets
+
+  jasmine.snippets provides some commonly used code completition
+snippets.
+
+  You may use the following snippets:
+
+  desc: ~
+              specs are grouped in suites.
+              suites are defined using the global describe() function.
+
+  before: ~
+              a suite can have a beforeEach() declaration that runs
+              before each spec.
+
+  after: ~
+              a suite can have an afterEach() declaration that runs
+              after each spec.
+
+  it: ~
+              a spec is called with it()
+
+  ex: ~
+              a spec expectations about the behavior is expressed using
+              expect() and any of various expectation matchers.
+
+  exe: ~
+              expectation matching toEqual()
+
+  ext: ~
+              expectation matching true
+
+  exf: ~
+              expectation matching false
+
+  exp: ~
+              expectation matching a regular expression pattern
+
+  matcher: ~
+              create a custom matcher
+
+==============================================================================
+                                                             *jasmine-matcher*
+Expectation Matcher
+
+Jasmine has several built-in matchers. Here are a few:
+
+    expect(x).toEqual(y); ~
+      compares objects or primitives x and y and passes if they are equivalent
+
+    expect(x).toBe(y); ~
+      compares objects or primitives x and y and passes if they are the same object
+
+    expect(x).toMatch(pattern); ~
+      compares x to string or regular expression pattern and passes if they match
+
+    expect(x).toBeDefined(); ~
+      passes if x is not undefined
+
+    expect(x).toBeUndefined(); ~
+      passes if x is undefined
+
+    expect(x).toBeNull(); ~
+      passes if x is null
+
+    expect(x).toBeTruthy(); ~
+      passes if x evaluates to true
+
+    expect(x).toBeFalsy(); ~
+      passes if x evaluates to false
+
+    expect(x).toContain(y); ~
+      passes if array or string x contains y
+
+    expect(x).toBeLessThan(y); ~
+      passes if x is less than y
+
+    expect(x).toBeGreaterThan(y); ~
+      passes if x is greater than y
+
+    expect(fn).toThrow(e); ~
+      passes if function fn throws exception e when executed
+
+
+Every matcher's criteria can be inverted by prepending .not:
+
+    expect(x).not.toEqual(y); ~
+      compares objects or primitives x and y and passes if they are not equivalent
+
+
