@@ -12,7 +12,7 @@ snippet before
 
 # a suite can have an afterEach() declaration that runs after each spec.
 snippet after
-	afterEach(function () {
+	afterEach(function(){
 		${1}
 	});
 
@@ -22,7 +22,7 @@ snippet it
 		expect(${2:condition}).toEqual(${3});
 	});
 
-# within a spec expectations about the behavior are expressed using expect() and any of various expectation matchers.
+# a spec expectations about the behavior is expressed using expect() and any of various expectation matchers.
 snippet ex
 	expect(${1}).to${2}(${3});
 
@@ -38,8 +38,8 @@ snippet ext
 snippet exf
 	expect(${1}).toBeFalsy();
 
-# expectation matching a regular expression
-snippet expat
+# expectation matching a regular expression pattern
+snippet exp
 	expect(${1}).toMatch(${2:/pattern/});
 
 # create a custom matcher
