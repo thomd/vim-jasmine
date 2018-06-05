@@ -1,6 +1,6 @@
 # Vim and Jasmine BDD
 
-Some vim snippets and a syntax file for behavior-driven development with [Jasmine](http://pivotal.github.com/jasmine/) packed in a vim plugin.
+Some vim snippets and a syntax file for behavior-driven development with [Jasmine](https://jasmine.github.io/) packed in a vim plugin.
 
 ## Requirement
 
